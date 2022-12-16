@@ -1,14 +1,9 @@
 const preload = Preload();
 
-preload
-  .fetch([
-    'https://light-dist-for-host.vercel.app./assets/images/mountains.png',
-    'https://light-dist-for-host.vercel.app./assets/images/Mountains1-mobile.png',
-  ])
-  .then((items) => {
-    // use either a promise or 'oncomplete'
-    console.log(items);
-  });
+preload.fetch(['https://test-dimafrontbackdeveloper.vercel.app./Frame.png']).then((items) => {
+  // use either a promise or 'oncomplete'
+  console.log(items);
+});
 
 preload.oncomplete = (items) => {
   console.log(items);
